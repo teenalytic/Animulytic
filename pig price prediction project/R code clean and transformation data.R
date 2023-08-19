@@ -3,7 +3,8 @@ library(tidyverse)
 library(glue)
 
 # Set the working directory to the location of your CSV files
-setwd("C:/Users/TEETAT/OneDrive/Post pic animulytic/livestock_price")
+path = '/data/workspace_files/'
+setwd(path)
 
 # List of files to process
 files <- c("bone_poultry.csv", "egg.csv","finished_pig.csv", "piglet.csv"
