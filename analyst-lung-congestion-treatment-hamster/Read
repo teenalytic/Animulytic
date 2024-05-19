@@ -1,1 +1,9 @@
+ใช้ข้อมูลดิบจาก file csv (ข้อมูลจำลอง) เพื่อหาอัตราการตายของหนูแฮมเตอร์แก่ จากการให้ยา antiobiotic หรือไม่ให้ยา antibiotic
+ในไฟล์ analyst_lung_congestion_treatment-hamster.csv
+จะมีcolumn ดังนี้
+1. number(integer) : ลำดับของหนูที่เก็บข้อมูล
+2. Sex (Str) : เพศของหนู
+3. Age (Float) : อายุหนู(ปี)
+4. ABO (Boolean) : 1=ให้ 0=ไม่ให้
+5. Survival (Boolean) : 1 = รอด , 0 =ไม่รอด
 
