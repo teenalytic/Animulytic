@@ -8,25 +8,16 @@ The script uses the `caret` library for machine learning tasks.
 
 ```R
 library(caret)
+library(tidyverse)
 ```
 
 ## Data Preparation
 
-1. The script starts by importing a dataset named `livestockprice` into a dataframe `df`.
-
-2. Data transformation is performed using dplyr-like syntax:
-   - Selects columns containing 'avg' in their names
-   - Renames selected columns for easier reference
-
+The script starts by importing a dataset named `livestockprice_prep` into a dataframe `df`.
 ```R
-df <- df %>%
-      select(contains('avg')) %>%
-      select(bone_poultry = 1,
-             bovine_tenderlion = 2,
-             cabbage = 3,
-             # ... other variables ...
-             tilapia = 18)
+df <- read_csv("https://raw.githubusercontent.com/teenalytic/Animulytic/main/pig%20price%20prediction%20project/2024/livestockprice_prep.csv")
 ```
+
 
 ## Data Splitting
 
