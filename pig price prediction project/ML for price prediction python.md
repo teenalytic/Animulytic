@@ -17,23 +17,12 @@ import matplotlib.pyplot as plt
 
 ## Data Preparation
 
-1. The script starts by importing a dataset from a CSV file:
+The script starts by importing a dataset from a CSV file:
 
 ```python
-df = pd.read_csv('livestockprice.csv')
+df = pd.read_csv("https://raw.githubusercontent.com/teenalytic/Animulytic/main/pig%20price%20prediction%20project/2024/livestockprice_prep.csv")
 ```
 
-2. Data transformation is performed by selecting specific columns and renaming them:
-
-```python
-columns_to_select = ['bone_poultry_avg', 'bovine_tenderlion_avg', 'cabbage_avg', 'catfish_avg',
-                     'corn_avg', 'cucumber_avg', 'Doc_hen_avg', 'Doc_poultry_avg', 'egg_avg',
-                     'livepig_avg', 'piglet_avg', 'pork_belly_avg', 'pork_hip_avg',
-                     'pork_tenderloin_avg', 'pork_shoulder_avg', 'pork_loin_avg', 'sbm_avg', 'tilapia_avg']
-
-df = df[columns_to_select]
-df.columns = [col.replace('_avg', '') for col in df.columns]
-```
 
 ## Data Splitting
 
